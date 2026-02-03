@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+    background: #F7F9FC;
+    margin: 0;
+}
+
+header {
+    background: #0A2540;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background: #2EC4B6;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+.result div {
+    font-size: 28px;
+    margin: 10px 0;
+}

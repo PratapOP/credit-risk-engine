@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Risk Scoring Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Credit Risk Scoring Engine</h1>
+    <p>Random Forest • Explainable AI • Fintech Grade</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Applicant Data</h2>
+        <input placeholder="Annual Income" id="income">
+        <input placeholder="Total Debt" id="debt">
+        <input placeholder="Savings" id="savings">
+        <input placeholder="Dependents" id="dependents">
+        <input placeholder="Credit Score" id="credit">
+        <input placeholder="Credit Utilization (0–1)" id="util">
+        <input placeholder="Missed Payments" id="missed">
+        <input placeholder="Employment Length (years)" id="emp">
+        <input placeholder="Loan Amount" id="loan">
+        <input placeholder="Loan Term (months)" id="term">
+        <button onclick="evaluate()">Evaluate Loan</button>
+    </div>
+
+    <div class="card result">
+        <h2>Risk Summary</h2>
+        <div id="pd">--</div>
+        <div id="risk">--</div>
+        <div id="decision">--</div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
