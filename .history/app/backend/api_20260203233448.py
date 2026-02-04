@@ -1,14 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 import joblib
 import numpy as np
-import os
 
 app = Flask(__name__)
-CORS(app)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-model = joblib.load(os.path.join(BASE_DIR, "models", "random_forest.pkl"))
 
 def compute_features(data):
     income = float(data["annual_income"])
